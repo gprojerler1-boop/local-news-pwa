@@ -25,9 +25,8 @@ function renderNews(items) {
   const box = document.getElementById("news");
   box.innerHTML = "";
   items.forEach(n => {
-   const div = document.createElement("div");
+const div = document.createElement("div");
 div.className = "news-item";
-
     div.innerHTML = `
       <h3>${n.title}</h3>
       <p>${n.text}</p>
@@ -41,4 +40,3 @@ div.className = "news-item";
 function share(text) {
   navigator.share({ text });
 }
-
